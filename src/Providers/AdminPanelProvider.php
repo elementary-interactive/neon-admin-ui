@@ -27,14 +27,30 @@ class AdminPanelProvider extends PanelProvider
   private function scanNeonResources(): array
   {
     $resources = [
-      \Neon\Admin\Resources\SiteResource::class,
-      \Neon\Admin\Resources\MenuResource::class,
-      \Neon\Admin\Resources\MenuItemResource::class,
-      \Neon\Admin\Resources\ContentResource::class,
-      \Neon\Admin\Resources\AdminResource::class,
-      \Neon\Admin\Resources\AttributeResource::class,
+      \Neon\Admin\Resources\AdminResource::class
     ];
 
+    if (class_exists(\Neon\Admin\Resources\SiteResource::class))
+    {
+      $resources[] = \Neon\Admin\Resources\SiteResource::class;
+    }
+
+    if (class_exists(\Neon\Admin\Resources\MenuResource::class))
+    {
+      $resources[] = \Neon\Admin\Resources\MenuResource::class;
+      $resources[] = \Neon\Admin\Resources\MenuItemResource::class;
+    }
+
+    if (class_exists(\Neon\Admin\Resources\ContentResource::class))
+    {
+      $resources[] = \Neon\Admin\Resources\ContentResource::class;
+    }
+
+    if (class_exists(\Neon\Admin\Resources\AttributeResource::class))
+    {
+      $resources[] = \Neon\Admin\Resources\AttributeResource::class;
+    }
+    
     if (class_exists(\Neon\News\Models\News::class))
     {
       $resources[] = \Neon\Admin\Resources\NewsResource::class;
