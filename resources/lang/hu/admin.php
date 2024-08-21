@@ -213,5 +213,232 @@ return [
 				],
 			],
 		],
+		"slideshow"			=> [
+			"title"         => "Diavetítés",
+			"table"         => [
+				'tabs'          => [
+					'all'           => 'Összes',
+					'new'           => 'Új',
+					'live'          => 'Élő',
+					'archive'       => 'Archív',
+				]
+			],
+			"form"          => [
+				"fieldset"      => [
+					"publishing"    => "Láthatóság",
+					"items"         => "Elemek",
+					"add_items"     => "Dia hozzáadása"
+				],
+				"fields"        => [
+					"title"         => [
+						"label"         => "Cím",
+					],
+					"site"          => [
+						"label"         => "Domain",
+					],
+					"items"         => [
+						"label"         => "Elemek"
+					],
+					"items_media"   => [
+						"label"         => "Az elemhez tartotó média"
+					],
+					"status"        => [
+						"label"         => "Státusz",
+					],
+					"published_at"  => [
+						"label"         => "Publikálás dátuma",
+					],
+					"expired_at"    => [
+						"label"         => "Lejárat dátuma",
+					]
+				]
+			],
+			"blocks"				=> [
+				"slideshow_block"	=> [
+					"label"						=> "Diavetítés",
+					"slideshow"				=> [
+						"label"						=> "Diavetítés kiválasztása",
+						"help"						=> "A kiválasztott diavetítés fog megjelenni az oldalon, amennyiben a megjelenése lehetséges.",
+					]
+				]
+			]
+		],
+		"slideshow_items"
+		=> [
+			"form"          => [
+				"fieldset"      => [
+					"items"         => [
+						"label"         => "Diák",
+						"button"        => "Dia hozzáadása"
+					]
+				],
+				"fields"        => [
+					"title"         => [
+						"label"         => "Cím",
+						"help"          => "Címsor a dián. Hagyd üresen, ha csak a képet szeretnéd megjeleníteni.",
+					],
+					"lead"          => [
+						"label"         => "Szöveg"
+					],
+					"media"          => [
+						"label"         => "Kép"
+					],
+					"cta_text"      => [
+						"label"         => "Gomb szövege",
+						"help"          => "A CTA gomb szövege. Csak a CTA linkkel együtt hozzák létre a gombot.",
+					],
+					"cta_link"         => [
+						"label"         => "Gomb linkje",
+						"help"          => "Ide fog vezetni a CTA gomb, a link szövege a CTA gomb szövege lesz.",
+					],
+					"status"          => [
+						"label"         => "Státusz"
+					],
+				]
+			]
+		],
+    "faq"           => [
+      "form"          => [
+        "fields"        => [
+          "category"      => [
+            "label"         => "GYIK Kategória",
+          ],
+          "question"      => [
+            "label"         => "Kérdés",
+          ],
+          "answer"        => [
+            "label"         => "Válasz",
+          ],
+          "media"         => [
+            "label"         => "Média",
+          ],
+          "status"        => [
+            "label"         => "Státusz",
+          ],
+          "published_at"  => [
+            "label"         => "Publikálva",
+          ],
+          "expired_at"    => [
+            "label"         => "Lejárat",
+          ],
+        ],
+        "schema"        => [
+          "publishing"    => [
+            "label"         => "Publikálás beállításai"
+          ]
+        ],
+      ],
+    ],
+    "faq_category"  => [
+      "form"          => [
+        "fields"        => [
+          "site"          => [
+            "label"         => "Domain",
+          ],
+          "title"         => [
+            "label"         => "Cím",
+          ],
+          "slug"          => [
+            "label"         => "URL",
+          ],
+          "media"         => [
+            "label"         => "Média",
+          ],
+          "lead"          => [
+            "label"         => "Lead",
+          ],
+          "status"        => [
+            "label"       => "Státusz",
+          ],
+          "published_at"  => [
+            "label"       => "Publikálva",
+          ],
+          "expired_at"    => [
+            "label"       => "Lejár",
+          ],
+        ],
+        "schema"      => [
+          "publishing"  => [
+            "label"       => "Publikálás beállításai"
+          ]
+        ]
+      ],
+    ],
+    "document"      => [
+      "form"          => [
+        "fields"        => [
+          "category"      => [
+            "label"         => "Kategória",
+          ],
+          "title"      => [
+            "label"         => "Cím",
+          ],
+          "document_original_name"
+                          => [
+            "label"         => "Eredeti név"
+          ],
+          "path"					=> [
+            "label"         => "Elérési út",
+            "copy"          => "Elérési út a vágólapra másolva!"
+          ],
+          "description"   => [
+            "label"         => "MEghatározás",
+          ],
+          "document"      => [
+            "label"         => "Dokumentum",
+          ],
+          "status"        => [
+            "label"         => "Státusz",
+          ],
+          "published_at"  => [
+            "label"         => "Publikálva",
+          ],
+          "expired_at"    => [
+            "label"         => "Lejár",
+          ],
+        ],
+        "schema"        => [
+          "publishing"    => [
+            "label"         => "Publikálás beállításai"
+          ]
+        ],
+      ],
+    ],
+    "document_category"
+                    => [
+      "form"          => [
+        "fields"        => [
+          "site"          => [
+            "label"         => "Domain",
+          ],
+          "title"         => [
+            "label"         => "Cím",
+          ],
+          "slug"          => [
+            "label"         => "URL",
+          ],
+          "media"         => [
+            "label"         => "Média",
+          ],
+          "lead"          => [
+            "label"         => "Lead",
+          ],
+          "status"        => [
+            "label"       => "Státusz",
+          ],
+          "published_at"  => [
+            "label"       => "Publikálva",
+          ],
+          "expired_at"    => [
+            "label"       => "Lejár",
+          ],
+        ],
+        "schema"      => [
+          "publishing"  => [
+            "label"       => "Publikálás beállításai"
+          ]
+        ]
+      ],
+    ],
 	],
 ];

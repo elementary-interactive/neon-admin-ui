@@ -558,6 +558,11 @@ return [
                           => [
             "label"         => "Original name"
           ],
+          "path"
+                          => [
+            "label"         => "Path",
+            "copy"          => "Path copied!"
+          ],
           "description"   => [
             "label"         => "Desciption",
           ],
