@@ -15,7 +15,16 @@ return [
 		"web"      => "Weboldal",
 		"site"     => "Domainek",
 		"menu"     => "Menük",
+		"menu_item"  => "Menü elemek",
 		"news"     => "Hírek",
+    "content"    => "Tartalmak",
+    "slideshow"  => "Diavetítés",
+    "faq"        => "GYIK",
+    "faq_category"
+    => "GYIK Kategóriák",
+    "document"   => "Dokumentumok",
+    "document_category"
+    => "Dokumentum kategóriák",
 	],
 	"models"     => [
 		"admin"      => "Adminisztrátor",

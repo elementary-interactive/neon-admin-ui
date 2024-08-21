@@ -23,7 +23,7 @@ return [
     "faq_category"
     => "FAQ Categories",
     "document"   => "Documents",
-    "docuemnt_category"
+    "document_category"
     => "Documents Categories",
   ],
   "models"     => [
