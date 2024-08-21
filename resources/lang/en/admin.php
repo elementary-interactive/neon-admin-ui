@@ -561,7 +561,7 @@ return [
           "path"
                           => [
             "label"         => "Path",
-            "copy"          => "Path copied!"
+            "copied"        => "Path copied!"
           ],
           "description"   => [
             "label"         => "Desciption",

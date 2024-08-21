@@ -28,6 +28,25 @@ return [
 		"menus"      => "Menük",
 		"news_item"  => "Hír",
 		"news"       => "Hírek",
+		"menu_item"  => "Menü elem",
+    "menu_items" => "Menü elemek",
+    "content"    => "Tartalom",
+    "contents"   => "Tartalmak",
+    "slideshow_item"
+    => "Diavetítés",
+    "slideshow"  => "Diavetítés",
+    "faq"        => "GYIK",
+    "faqs"       => "GYIK",
+    "faq_category"
+    => "GYIK Kategória",
+    "faq_categories"
+    => "GYIK Kategóriák",
+    "document"   => "Dokumentum",
+    "documents"  => "Dokumentumok",
+    "document_category"
+    => "Dokumentum kategória",
+    "document_categories"
+    => "Dokumentum kategóriák",
 	],
 	"resources"  => [
 		"generic"       => [
@@ -379,10 +398,10 @@ return [
           ],
           "path"					=> [
             "label"         => "Elérési út",
-            "copy"          => "Elérési út a vágólapra másolva!"
+            "copied"        => "Elérési út a vágólapra másolva!"
           ],
           "description"   => [
-            "label"         => "MEghatározás",
+            "label"         => "Meghatározás",
           ],
           "document"      => [
             "label"         => "Dokumentum",
