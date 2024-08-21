@@ -1,6 +1,6 @@
 {
   "name": "neon/admin-ui",
-  "version": "3.0.0-alpha-30",
+  "version": "3.0.0-alpha-31",
   "description": "",
   "type": "library",
   "license": "MIT",
@@ -8,6 +8,10 @@
     {
       "name": "Balázs Ercsey",
       "email": "balazs.ercsey@elementary-interactive.com"
+    },
+    {
+      "name": "Egon Stefán",
+      "email": "egon.stefan@elementary-interactive.com"
     }
   ],
   "autoload": {
