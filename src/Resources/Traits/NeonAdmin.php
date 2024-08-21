@@ -47,7 +47,7 @@ trait NeonAdmin
         $field->$rule();
       }
 
-      if ($attribute['field']) {
+      if ($attribute['field'] === 'select') {
         $field->options($attribute['parameters'])
           ->native(false);
       }
