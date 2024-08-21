@@ -98,7 +98,8 @@ return [
             "label"         => "Input field",
             "options"       => [
               "text"         => "Text input",
-              "boolean"      => "Toogle"
+              "boolean"      => "Toogle",
+              "select"       => "Select input"
             ],
           ],
           "rules"         => [

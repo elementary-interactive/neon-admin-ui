@@ -35,6 +35,9 @@ trait NeonAdmin
         case 'boolean':
           $fieldComponent .= 'Toggle';
           break;
+        case 'select':
+          $fieldComponent .= 'Select';
+          break;
       }
 
       $field = $fieldComponent::make($attribute['slug'])
@@ -42,6 +45,11 @@ trait NeonAdmin
 
       foreach ($attribute['rules'] as $rule) {
         $field->$rule();
+      }
+
+      if ($attribute['field']) {
+        $field->options($attribute['parameters'])
+          ->native(false);
       }
 
       $attributables[] = $field;

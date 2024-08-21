@@ -97,7 +97,9 @@ return [
 					"field"   => [
 						"label"   => "Beviteli mező",
 						"options" => [
-							"text" => "Szöveges beviteli mezők",
+							"text" 		=> "Szöveges beviteli mezők",
+							"boolean"	=> "Kapcsoló",
+							"select"	=> "Választó lista"
 						],
 					],
 					"rules"   => [
