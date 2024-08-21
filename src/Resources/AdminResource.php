@@ -62,6 +62,10 @@ class AdminResource extends Resource
           ->unique(ignoreRecord: true)
           ->email()
           ->maxLength(255),
+        Forms\Components\TextInput::make('password')
+          ->password()
+          ->revealable()
+          ->autocomplete(false)
       ]);
   }
 

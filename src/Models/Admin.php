@@ -40,10 +40,14 @@ class Admin extends Authenticatable implements FilamentUser
      * @var array
      */
     protected $casts = [
-
+        'password' => 'hashed',
     ];
 
-    
+    // public function setPasswordAttribute(): void
+    // {
+
+    // }
+
     public function canAccessFilament(): bool
     {
         return true; //- str_ends_with($this->email, '@yourdomain.com') && $this->hasVerifiedEmail();
