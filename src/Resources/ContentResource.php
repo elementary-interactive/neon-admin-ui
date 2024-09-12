@@ -103,6 +103,24 @@ class ContentResource extends Resource
 											   ),
 										   ])
 								 ->required(),
+							 Select::make('padding')
+								 ->options([
+											   'def-p-0'         => __(
+												   'neon-admin::admin.resources.content.form.fields.content.heading.padding.padding0'
+											   ),
+											   'def-p-1'         => __(
+												   'neon-admin::admin.resources.content.form.fields.content.heading.padding.padding1'
+											   ),
+											   'def-p-2'         => __(
+												   'neon-admin::admin.resources.content.form.fields.content.heading.padding.padding2'
+											   ),
+											   'def-p-3'         => __(
+												   'neon-admin::admin.resources.content.form.fields.content.heading.padding.padding3'
+											   ),
+											   'default-padding' => __(
+												   'neon-admin::admin.resources.content.form.fields.content.heading.padding.padding4'
+											   ),
+										   ]),
 						 ])
 				->icon('heroicon-m-bars-2')
 				->columns(2),
