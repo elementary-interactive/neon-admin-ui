@@ -25,6 +25,7 @@ return [
 		"document"  => "Dokumentumok",
 		"document_category"
 					=> "Dokumentum kategóriák",
+		"redirect"  => "Átirányítások",
 	],
 	"models"     => [
 		"admin"      => "Adminisztrátor",
@@ -56,6 +57,8 @@ return [
 					 => "Dokumentum kategória",
 		"document_categories"
 					 => "Dokumentum kategóriák",
+		"redirect"   => "Átirányítás",
+		"redirects"  => "Átirányítások",
 	],
 	"resources"  => [
 		"generic"       => [
@@ -261,16 +264,16 @@ return [
 					"tags"           => [
 						"label" => "Címkék",
 					],
-					"pinned"        => [
+					"pinned"         => [
 						"label" => "Kitűzés",
 					],
-					"status"        => [
+					"status"         => [
 						"label" => "Státusz",
 					],
-					"published_at"  => [
+					"published_at"   => [
 						"label" => "Publikálva",
 					],
-					"expired_at"    => [
+					"expired_at"     => [
 						"label" => "Lejár",
 					],
 				],
@@ -561,6 +564,18 @@ return [
 				"schema" => [
 					"publishing" => [
 						"label" => "Publikálás beállításai",
+					],
+				],
+			],
+		],
+		"redirect"      => [
+			"form" => [
+				"fields" => [
+					"to"   => [
+						"label" => "Honnan",
+					],
+					"from" => [
+						"label" => "Hova",
 					],
 				],
 			],
