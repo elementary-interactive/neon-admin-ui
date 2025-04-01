@@ -25,6 +25,7 @@ return [
 		"document"  => "Documents",
 		"document_category"
 					=> "Documents Categories",
+		"redirect"  => "Redirects",
 	],
 	"models"     => [
 		"admin"      => "Administrator",
@@ -56,6 +57,8 @@ return [
 					 => "Document Category",
 		"document_categories"
 					 => "Document Categories",
+		"redirect"   => "Redirect",
+		"redirects"  => "Redirects",
 	],
 	"resources"  => [
 		"generic"       => [
@@ -627,6 +630,19 @@ return [
 				"schema" => [
 					"publishing" => [
 						"label" => "Publishing information",
+					],
+				],
+			],
+		],
+
+		"redirect" => [
+			"form" => [
+				"fields" => [
+					"to"   => [
+						"label" => "To",
+					],
+					"from" => [
+						"label" => "From",
 					],
 				],
 			],
