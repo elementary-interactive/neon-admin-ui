@@ -572,10 +572,10 @@ return [
 			"form" => [
 				"fields" => [
 					"to"   => [
-						"label" => "Honnan",
+						"label" => "Hova",
 					],
 					"from" => [
-						"label" => "Hova",
+						"label" => "Honnan",
 					],
 				],
 			],
