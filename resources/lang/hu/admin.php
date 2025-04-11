@@ -577,6 +577,9 @@ return [
 					"from" => [
 						"label" => "Honnan",
 					],
+					"code" => [
+						"label" => "Átirányítás típusa",
+					],
 				],
 			],
 		],
