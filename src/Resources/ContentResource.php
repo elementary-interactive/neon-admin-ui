@@ -258,11 +258,13 @@ class ContentResource extends Resource
 								  BasicStatus::New      => 'heroicon-o-sparkles',
 								  BasicStatus::Active   => 'heroicon-o-check-circle',
 								  BasicStatus::Inactive => 'heroicon-o-x-circle',
+								  default               => 'heroicon-o-question-mark-circle',
 							  })
 							  ->color(fn(BasicStatus $state): string => match ($state) {
 								  BasicStatus::New      => 'gray',
 								  BasicStatus::Active   => 'success',
 								  BasicStatus::Inactive => 'danger',
+								  default               => 'gray',
 							  })
 							  ->searchable()
 							  ->sortable(),
