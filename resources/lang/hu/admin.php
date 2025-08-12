@@ -384,11 +384,8 @@ return [
 			"blocks" => [
 				"slideshow-block" => [
 					"slideshow"		=> [
-						"label"     => "Diavetítés",
-						"slideshow" => [
-							"label" => "Diavetítés kiválasztása",
-							"help"  => "A kiválasztott diavetítés fog megjelenni az oldalon, amennyiben a megjelenése lehetséges.",
-						],
+						"label" => "Diavetítés kiválasztása",
+						"help"  => "A kiválasztott diavetítés fog megjelenni az oldalon, amennyiben a megjelenése lehetséges.",
 					],
 				],
 				"slideshow_block" => [
